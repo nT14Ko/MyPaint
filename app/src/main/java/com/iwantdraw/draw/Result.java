@@ -59,8 +59,6 @@ public class Result extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_result);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
 
         sharedPreferences = getApplicationContext().getSharedPreferences("DATA", Context.MODE_PRIVATE);
         param = sharedPreferences.getString("param", "");
